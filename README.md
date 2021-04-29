@@ -4,12 +4,12 @@ A module to encrypt/decrypt string in Node, written in ES6.
 
 Using companion framework libraries, you should be able to encrypt/decrypt between node, iOS and Android.
 
-Companion libs can be found here: [Cross Platform AES Encryption](https://github.com/skavinvarnan/Cross-Platform-AES)
+Companion libs can be found here: [Cross Platform AES Encryption](https://github.com/@ahmetulusoy/Cross-Platform-AES)
 
 
 ## Installation
 
-`npm install @ahmetulusoy/cryptlib --save`
+`npm install @@ahmetulusoy/cryptlib --save`
 
 ## Usage
 
@@ -20,7 +20,7 @@ In this mode the library will internally create a random IV while encryption and
 const plainText = "this is my plain text";
 const key = "your key";
 
-const cryptLib = require('@ahmetulusoy/cryptlib');
+const cryptLib = require('@@ahmetulusoy/cryptlib');
 
 const cipherText = cryptLib.encryptPlainTextWithRandomIV(plainText, key);
 console.log('cipherText %s', cipherText);
@@ -32,7 +32,7 @@ console.log('decryptedString %s', decryptedString);
 ### Basic Encrypt Decrypt
 
 ```javascript
-const cryptLib = require('@ahmetulusoy/cryptlib');
+const cryptLib = require('@@ahmetulusoy/cryptlib');
 const iv = cryptLib.generateRandomIV(16); //16 bytes = 128 bit
 const key = cryptLib.getHashSha256('my secret key', 32); //32 bytes = 256 bits
 const cipherText = cryptLib.encrypt('This is the text to be encrypted', key, iv);

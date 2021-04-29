@@ -9,7 +9,7 @@ Companion libs can be found here: [Cross Platform AES Encryption](https://github
 
 ## Installation
 
-`npm install @skavinvarnan/cryptlib --save`
+`npm install @ahmetulusoy/cryptlib --save`
 
 ## Usage
 
@@ -20,7 +20,7 @@ In this mode the library will internally create a random IV while encryption and
 const plainText = "this is my plain text";
 const key = "your key";
 
-const cryptLib = require('@skavinvarnan/cryptlib');
+const cryptLib = require('@ahmetulusoy/cryptlib');
 
 const cipherText = cryptLib.encryptPlainTextWithRandomIV(plainText, key);
 console.log('cipherText %s', cipherText);
@@ -32,7 +32,7 @@ console.log('decryptedString %s', decryptedString);
 ### Basic Encrypt Decrypt
 
 ```javascript
-const cryptLib = require('@skavinvarnan/cryptlib');
+const cryptLib = require('@ahmetulusoy/cryptlib');
 const iv = cryptLib.generateRandomIV(16); //16 bytes = 128 bit
 const key = cryptLib.getHashSha256('my secret key', 32); //32 bytes = 256 bits
 const cipherText = cryptLib.encrypt('This is the text to be encrypted', key, iv);

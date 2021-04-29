@@ -35,7 +35,7 @@
     "Decryption"
   ],
   "dependencies": {
-    "bl": "1.0.0"
+    "bl": "1.2.3"
   },
   "devDependencies": {
     "chai": "^2.3.0",
